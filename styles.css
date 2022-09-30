@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+  hyphens: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  -webkit-transition: all 0.4s ease-out;
+}
+
+:root {
+  --bordes-one: 2px solid rgb(14, 72, 196);
+  --hosptal-blue: #93baee;
+  --very-light-green: rgb(172, 209, 172);
+  --very-light-blue: #2d80d3;
+  --very-light-blue2: #1e508d;
+}
+
+body {
+  height: 1000px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 40px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  background-color: var(--hosptal-blue);
+  box-shadow: 5px 8px 40px black;
+}
+.icon {
+  width: 70px;
+}
+
+.ul-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.ul-navbar li {
+  margin-left: 15px;
+  list-style: none;
+  border-bottom: var(--bordes-one);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background-color: var(--very-light-blue);
+  color: white;
+  font-weight: 400;
+  box-shadow: 5px 5px 10px var(--very-light-blue2);
+  cursor: pointer;
+}
+
+.ul-navbar li:hover {
+  border: none;
+  box-shadow: none;
+  transition: 0.5s all;
+}
+
+.ola-shape-fill {
+  fill: var(--very-light-blue2);
+}
+.ola-bottom-one {
+  background-color: transparent;
+}
+.ola-bottom-one svg {
+  height: 50px;
+  width: 100%;
+}
+
+/*Section one - Main*/
+
+main {
+  padding: 150px 200px 200px 200px;
+  background-color: var(--very-light-blue2);
+  height: 460px;
+}
+
+main:hover {
+  height: 650px;
+}
+
+.nameProfesion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: default;
+  color: black;
+}
+
+.nameProfesion span {
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+  word-spacing: 20px;
+}
+
+.main-left {
+  background-image: url(Imgs/StarsBlack.png);
+}
+
+main:hover .nameProfesion,
+main:hover .presentation {
+  color: white;
+}
+
+main:hover .main-left {
+  background-image: url(Imgs/StarsWhite.jpg);
+}
+
+.presentation {
+  display: flex;
+}
+
+.usbbog {
+  text-decoration: none;
+  color: inherit;
+}
+
+.platzi,
+.udemy,
+.ancor {
+  text-decoration: none;
+  color: inherit;
+}
+
+main:hover .udemy {
+  color: #eb5157;
+  font-size: 19px;
+}
+main:hover .platzi {
+  color: #98ca3f;
+  font-size: 19px;
+}
+main:hover .ancor:nth-child(1) {
+  color: rgb(223, 223, 132);
+  font-size: 19px;
+}
+main:hover .ancor:nth-child(2) {
+  color: #cac7ed;
+  font-size: 19px;
+}
+main:hover .ancor:nth-child(3) {
+  color: rgb(224, 112, 112);
+  font-size: 19px;
+}
+main:hover .usbbog {
+  color: #ffa431;
+  font-size: 19px;
+}
+
+.presentation p {
+  width: 22rem;
+  justify-content: justify;
+  font-size: 13px;
+  cursor: default;
+}
+.presentation .one {
+  justify-content: start;
+}
+.two {
+  justify-content: end;
+  text-align: end;
+}
+
+main:hover .presentation p {
+  font-size: 17px;
+}
+
+/*Skills*/
+
+.skills {
+  background-color: #2d80d3;
+  height: 150vh;
+}
+
+.container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -50px;
+  padding-top: 90px;
+}
+
+.container-skills section {
+  padding: 20px 30px 30px 30px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show img {
+  max-width: 150px;
+  padding-bottom: 5px;
+}
+
+.show a {
+  text-decoration: none;
+  color: white;
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+  word-spacing: 5px;
+}
+
+.container-skills section div:nth-child(1) {
+  display: flex;
+  justify-content: end;
+  padding: 5px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.container-skills section p {
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  max-height: 0;
+}
+
+section:target p {
+  max-height: 130px;
+}
+
+.show a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show a svg {
+  fill: white;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.show-p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.show a span {
+  font-size: 20px;
+}
+
+.ola-shape-fill-two {
+  fill: var(--very-light-blue);
+}
