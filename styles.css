@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
   padding: 0;
   hyphens: auto;
   font-family: "Roboto Condensed", sans-serif;
@@ -14,6 +13,7 @@
   --very-light-green: rgb(172, 209, 172);
   --very-light-blue: #2d80d3;
   --very-light-blue2: #1e508d;
+  --very-light-blue3: #3990fa;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 nav {
   display: flex;
@@ -91,7 +92,7 @@ main:hover {
   justify-content: space-between;
   margin-bottom: 20px;
   cursor: default;
-  color: black;
+  color: white;
 }
 
 .nameProfesion span {
@@ -159,6 +160,7 @@ main:hover .usbbog {
   justify-content: justify;
   font-size: 13px;
   cursor: default;
+  color: white;
 }
 .presentation .one {
   justify-content: start;
@@ -251,4 +253,78 @@ section:target p {
 
 .ola-shape-fill-two {
   fill: var(--very-light-blue);
+}
+
+.ola-bottom-two {
+  background-color: var(--very-light-blue3);
+}
+/*Projects*/
+
+.projects {
+  background-color: var(--very-light-blue3);
+  padding: 0px 200px;
+  height: 700px;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-top: 70px;
+}
+
+.project-subtitile {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+  word-spacing: 5px;
+  font-weight: normal;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.projects:hover .project {
+  background-color: white;
+}
+
+.project div:nth-child(1) {
+  background-color: #e3d0f3;
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 51%;
+}
+
+.project-one {
+  border: 4px solid #ac6ce0;
+}
+
+.project-one h2 {
+  color: #ff71ba;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.project p {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.project img {
+  padding: 35px 35px 0px 35px;
+  width: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.ola-bottom-tarjets {
+  fill: #e3d0f3;
 }
