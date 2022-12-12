@@ -51,6 +51,10 @@ nav {
   align-items: center;
 }
 
+.ul-navbar a{
+  text-decoration: none;
+}
+
 .ul-navbar li {
   margin-left: 15px;
   list-style: none;
@@ -527,8 +531,9 @@ section:target p {
 
 .container-contacts {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 70px;
+  gap: 100px;
 }
 
 .container-mensaje {
@@ -557,6 +562,7 @@ section:target p {
 
 .list-contacts li img {
   width: 100px;
+  cursor: pointer;
 }
 
 .container-mensaje form{
@@ -572,10 +578,13 @@ section:target p {
   height: 100px;
   border: 0px solid transparent;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .container-mensaje form button{
   width: 100px;
   border: 0px solid transparent;
-  border-radius: 2px
+  border-radius:5px;
+  padding: 10px;
+  cursor: pointer;
 }

@@ -40,15 +40,16 @@
         </div>
         <div class="navbar-rigth">
           <ul class="ul-navbar">
-            <li>¿Quién soy?</li>
-            <li>Habilidades</li>
-            <li>Proyectos</li>
-            <li>Contáctame</li>
+            <a href="#info"><li>¿Quién soy?</li></a>
+            <a href="#habilidades"><li>Habilidades</li></a>
+            <a href="#projects"><li>Proyectos</li></a>
+            <a href="#contact"><li>Contáctame</li></a>
           </ul>
         </div>
       </nav>
     </header>
     <!--Presentation-->
+    <a name="info" id="info"></a>
     <main>
       <div class="main-left">
         <div class="nameProfesion">
@@ -87,6 +88,7 @@
       </div>
       <div class="main-right"></div>
     </main>
+    <a name="habilidades" id="habilidades"></a>
     <div class="ola-bottom-one">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -132,6 +134,7 @@
       </svg>
     </div>
     <!--Skills-->
+
     <section class="skills">
       <h1 class="containerTitleSkills">Habilidades</h1>
       <div class="container-skills">
@@ -361,6 +364,7 @@
         </section>
       </div>
     </section>
+    <a name="projects" id="projects"></a>
     <div class="ola-bottom-two">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -670,6 +674,7 @@
         </div>
       </div>
     </section>
+    <a name="contact" id="contact"></a>
     <div class="ola-bottom-three">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -719,23 +724,32 @@
       <h1 class="titleContainerContact">Contáctame</h1>
       <div class="container-contacts">
         <div class="container-mensaje">
-          <h3 class="title-mensaje">
-            Déjame un mensaje
-          </h3>
+          <h3 class="title-mensaje">Déjame un mensaje</h3>
           <form action="" class="formContact">
-            <input type="text" name="mensaje" id="mensaje">
+            <input type="text" name="mensaje" id="mensaje" />
             <button>Enviar</button>
           </form>
         </div>
         <ul class="list-contacts">
           <li>
-            <img src="/Imgs/logoLinkedin.svg" />
+            <a
+              href="https://www.linkedin.com/in/sergio-jáuregui"
+              target="_blank"
+              ><img src="Imgs/logoLinkedin.svg"
+            /></a>
           </li>
           <li>
-            <img src="/Imgs/logoGithub.svg" />
+            <a href="https://github.com/sergioAngel-1" target="_blank"
+              ><img src="Imgs/logoGithub.svg"
+            /></a>
           </li>
           <li>
-            <img src="/Imgs/LogoWhatsApp.svg" />
+            <a
+              href="https://api.whatsapp.com/send?phone=+573203795827&text=Vi%20tu%20portafolio%20y%20quiero%20hablar%20contigo"
+              target="_blank"
+            >
+              <img src="Imgs/LogoWhatsApp.svg"
+            /></a>
           </li>
         </ul>
       </div>
