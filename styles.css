@@ -7,6 +7,12 @@
   -webkit-transition: all 0.4s ease-out;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--hosptal-blue);
+}
+
 :root {
   --bordes-one: 2px solid rgb(14, 72, 196);
   --hosptal-blue: #93baee;
@@ -71,7 +77,7 @@ nav {
   background-color: transparent;
 }
 .ola-bottom-one svg {
-  height: 50px;
+  height: 100px;
   width: 100%;
 }
 
@@ -109,7 +115,6 @@ main:hover .nameProfesion,
 main:hover .presentation {
   color: white;
 }
-
 
 main:hover .main-left {
   background-image: url(Imgs/StarsWhite.jpg);
@@ -179,13 +184,14 @@ main:hover .presentation p {
 
 .skills {
   background-color: #2d80d3;
-  height: 150vh;
+  height: 160vh;
 }
 
 .containerTitleSkills,
-.titleContainerProjects {
-  margin-top: -50px;
-  padding-top: 100px;
+.titleContainerProjects,
+.titleContainerContact {
+  margin-top: -100px;
+  padding-top: 150px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -241,7 +247,7 @@ main:hover .presentation p {
 }
 
 section:target p {
-  max-height: 130px;
+  max-height: 150px;
 }
 
 .show a {
@@ -277,7 +283,7 @@ section:target p {
 .projects {
   background-color: var(--very-light-blue3);
   padding: 0px 120px;
-  height: 850px;
+  height: 950px;
 }
 
 .container-projects {
@@ -325,6 +331,7 @@ section:target p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .project-one div:nth-child(1) {
@@ -336,11 +343,11 @@ section:target p {
 }
 
 .project-three div:nth-child(1) {
-  background-color: #e1c8f3  ;
+  background-color: #e1c8f3;
 }
 
 .project-four div:nth-child(1) {
-  background-color: #6d97e4  ;
+  background-color: #6d97e4;
 }
 
 .project-one {
@@ -359,25 +366,28 @@ section:target p {
   color: #b49d4e;
 }
 
-.project-three{
-  border: 4px solid #AE98C8;
+.project-three {
+  border: 4px solid #ae98c8;
 }
-.project-three h2{
+.project-three h2 {
   color: #8f7ba6;
   padding: 0px 10px;
 }
 
-.project-four{
-  border: 4px solid #22488F;
+.project-four {
+  border: 4px solid #22488f;
 }
 
-.project-four h2{
-  color: #22488F;
+.project-four h2 {
+  color: #22488f;
 }
 
 .project p {
   text-align: center;
   padding: 25px 15px;
+  overflow-y: scroll;
+  max-height: 200px;
+  overflow-x: hidden;
 }
 
 .project img {
@@ -389,16 +399,16 @@ section:target p {
   padding: 35px 35px 0px 35px;
 }
 
-.project-two img{
+.project-two img {
   padding-top: 60px;
   padding-bottom: 15px;
 }
 
-.project-three img{
+.project-three img {
   padding: 60px 30px 55px 30px;
 }
 
-.project-four img{
+.project-four img {
   padding: 35px 35px 0px 35px;
   border-radius: 40px;
 }
@@ -415,10 +425,157 @@ section:target p {
   fill: #eae5d7;
 }
 
-.project-three .ola-bottom-tarjets{
+.project-three .ola-bottom-tarjets {
   fill: #e1c8f3;
 }
 
-.project-four .ola-bottom-tarjets{
+.project-four .ola-bottom-tarjets {
   fill: #6d97e4;
+}
+
+.button-tarjet {
+  width: 100%;
+  border: 0px;
+  border-radius: 0px 0px 25px 25px;
+  height: 100%;
+  margin-top: 10%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  max-height: 50px;
+}
+
+.button-tarjet a {
+  text-decoration: none;
+}
+
+.button-tarjet:hover {
+  font-size: 22px;
+}
+
+.button-one {
+  border-top: 4px solid #ac6ce0;
+  background: #e3d0f3;
+}
+
+.button-one a {
+  color: #ff71ba;
+}
+
+.button-two {
+  border-top: 4px solid #b49d4e;
+  background: #eae5d7;
+}
+
+.button-two a {
+  color: #b49d4e;
+}
+
+.button-three {
+  border-top: 4px solid #ae98c8;
+  background: #e1c8f3;
+}
+
+.button-three a {
+  color: #8f7ba6;
+}
+
+.button-four {
+  border-top: 4px solid #22488f;
+  background: #6d97e4;
+}
+
+.button-four a {
+  color: #22488f;
+}
+
+.projects:hover .project-one > p > b {
+  color: #ff71ba;
+}
+
+.projects:hover .project-two > p > b {
+  color: #b49d4e;
+}
+
+.projects:hover .project-three > p > b {
+  color: #8f7ba6;
+}
+
+.projects:hover .project-four > p > b {
+  color: #22488f;
+}
+
+.ola-shape-fill-three {
+  fill: var(--very-light-blue3);
+}
+
+.ola-bottom-three {
+  background-color: var(--very-light-blue);
+}
+
+.ola-bottom-three svg {
+  height: 150px;
+  width: 100%;
+}
+
+/*Contacto*/
+.contact {
+  background-color: var(--very-light-blue);
+  padding: 0px 120px;
+  height: 550px;
+}
+
+.container-contacts {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+
+.container-mensaje {
+  width: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-mensaje h3 {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  word-spacing: 5px;
+}
+
+.list-contacts {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.list-contacts li img {
+  width: 100px;
+}
+
+.container-mensaje form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-mensaje form input{
+  width: 250px;
+  height: 100px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+}
+
+.container-mensaje form button{
+  width: 100px;
+  border: 0px solid transparent;
+  border-radius: 2px
 }
